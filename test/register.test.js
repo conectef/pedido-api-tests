@@ -1,8 +1,6 @@
-// import request from 'supertest';
-// import { expect } from 'chai';
+import request from 'supertest';
+import { expect } from 'chai';
 
-const { createNewUser } = require('../helper/newUser.js');
-const { obterToken } = require('../helper/autentication.js');
 
 describe('Register', () => {
     describe('POST /register', () => {
