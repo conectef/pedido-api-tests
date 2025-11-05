@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { expect } from 'chai';
 
-describe.only('Consultar', () => {
+describe('Consultar', () => {
     describe('GET /pedidos', () => {
         it('Deve retornar 200 com a lista de pedidos', async () => {
             const responseLogin = await request("http://localhost:3000")
