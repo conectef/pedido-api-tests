@@ -15,7 +15,7 @@ Antes de começar, verifique se você tem instalado:
 
 ---
 
-## ⚙️ Instalação Estrutura do projeto
+## ⚙️ Instalação e Estrutura do projeto
 
 Clone o repositório (ou copie os arquivos para a sua máquina):
 
