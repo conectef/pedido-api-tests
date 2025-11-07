@@ -40,6 +40,7 @@ pedido-api-tests/
 │   └── Plano de testes
 │   └── Política de testes
 │
+├── erros/
 │
 ├── .env                         ← Configuração do ambiente
 ├── package.json
