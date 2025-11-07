@@ -15,7 +15,7 @@ Antes de começar, verifique se você tem instalado:
 
 ---
 
-## ⚙️ Instalação Estrutura do projeto
+## ⚙️ Instalação e Estrutura do projeto
 
 Clone o repositório (ou copie os arquivos para a sua máquina):
 
@@ -40,6 +40,7 @@ pedido-api-tests/
 │   └── Plano de testes
 │   └── Política de testes
 │
+├── erros/
 │
 ├── .env                         ← Configuração do ambiente
 ├── package.json
