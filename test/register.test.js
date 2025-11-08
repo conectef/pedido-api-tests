@@ -1,11 +1,13 @@
 import request from 'supertest';
 import { expect } from 'chai';
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 describe('Register', () => {
     describe('POST /register', () => {
         it('Deve retornar 201 quando usar credenciais válidas', async () => {
-            const response = await request("http://localhost:3000")
+            const response = await request(process.env.BASE_URL)
                 .post('/api/register')
                 .set('Content-Type', 'application/json')
                 .send({
@@ -18,7 +20,7 @@ describe('Register', () => {
         })
 
         it('Deve retornar 409 para usuarios já existente', async () => {
-            const response = await request("http://localhost:3000")
+            const response = await request(process.env.BASE_URL)
                 .post('/api/register')
                 .set('Content-Type', 'application/json')
                 .send({
@@ -31,7 +33,7 @@ describe('Register', () => {
         })
 
         it('Deve retornar 400 para dados obrigatórios', async () => {
-            const response = await request("http://localhost:3000")
+            const response = await request(process.env.BASE_URL)
                 .post('/api/register')
                 .set('Content-Type', 'application/json')
                 .send({
